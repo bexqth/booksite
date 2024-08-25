@@ -1,0 +1,116 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Allow scrolling */
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: white;
+    display: flex;
+    align-items: center; 
+    box-sizing: border-box;
+    z-index: 1000; /* Ensure the header is on top */
+}
+
+.navbar {
+    display: flex;
+    margin-left: auto;
+}
+
+.navbar a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #476fb6;
+    font-weight: 550;
+    text-decoration: none;
+}
+
+.home, .books, .account, .about {
+    margin-left: 20px; 
+}
+
+.logo {
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #476fb6;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.flexbox-container {
+    margin-top: 100px;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.book-container {
+    align-items: center;
+    align-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.bookImage{
+    height: 700px;
+}
+
+.bookInfo{
+    height: 700px;
+    width: 500px;
+}
+
+.bookTitle{
+    font-size: 60px;
+    padding: 0;
+    margin: 0;
+    margin-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.bookGenre, .bookDescription, .bookISBN, .descriptionTitle, .bookAuthor{
+    margin: 0;
+    margin-left: 25px;
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.bookAuthor{
+    text-decoration: none;
+    color: black;
+} 
+
+.descriptionTitle{
+    margin-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 550;
+}
+
+
+/*.bookAuthor{
+    margin: 0;
+    margin-left: 15px;
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: #476fb6;
+    font-size: 20px;
+}*/
+
+.review-container{
+    
+}
