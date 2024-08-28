@@ -9,11 +9,21 @@ class Book extends Model
 {
     use HasFactory;
 
-    protected $primaryKey = 'isbn'; // Set the primary key to ISBN
-    public $incrementing = false; // Disable auto-incrementing
-    protected $keyType = 'string'; // Set the key type to string
+    protected $primaryKey = 'isbn';
+    public $incrementing = false;
+    protected $keyType = 'string';
     
     protected $fillable = [
         'title', 'author', 'isbn', 'description', 'cover_image'
     ];
+
+    public function readingList()
+    {
+        return $this->hasMany(ReadingList::class, 'isbn', 'isbn');
+    }
+
+    public function reviews()
+    {
+        return $this->hasMany(Review::class, 'isbn', 'isbn');
+    }
 }

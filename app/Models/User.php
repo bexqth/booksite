@@ -24,6 +24,16 @@ class User extends Authenticatable
         'password',
     ];
 
+    public function readingList()
+    {
+        return $this->hasMany(ReadingList::class);
+    }
+
+    public function reviews()
+    {
+        return $this->hasMany(Review::class);
+    }
+
     /**
      * The attributes that should be hidden for serialization.
      *

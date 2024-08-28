@@ -11,7 +11,7 @@ class BookListController extends Controller
 
     public function index()
     {
-        //https://laracasts.com/discuss/channels/laravel/users-list-from-database-using-query-builder
+        //https://laravel.com/docs/11.x/queries
         $books = DB::table('books')->get();
         return view('booklist', ['books' => $books]);
         
